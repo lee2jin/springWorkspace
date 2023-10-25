@@ -47,5 +47,12 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	<script>
+		//jsp 컴파일 순서: JSP > Servlet > java --> html > css > javascript
+		let msg = `${result }`;
+		if(msg != ''){
+			alert(msg);
+		}
+	</script>
 </body>
 </html>
