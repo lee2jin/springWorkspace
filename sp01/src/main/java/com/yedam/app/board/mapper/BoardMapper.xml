@@ -40,15 +40,15 @@
     </selectKey>
   	INSERT INTO board
            (
-  				bno
-  		  	    , title
-  				, contents
-  				, writer
-  				, image
+  				BNO
+  		  	    , TITLE
+  				, CONTENTS
+  				, WRITER
+  				, IMAGE
   			)
   			VALUES
   			(
-  				, #{bno}
+  				#{bno}
   				, #{title}
   				, #{contents}
   				, #{writer}
