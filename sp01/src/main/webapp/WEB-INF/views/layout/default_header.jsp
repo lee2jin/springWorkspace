@@ -31,7 +31,10 @@
 						class="nav-link px-2 link-body-emphasis">전체사원조회</a></li>
 					<li><a href="${pageContext.request.contextPath }/empInsert"
 						class="nav-link px-2 link-body-emphasis">사원정보등록</a></li>
-					<li><a href="#" class="nav-link px-2 link-body-emphasis">Disabled</a></li>
+					<li><a href="${pageContext.request.contextPath }/boardList"
+					    class="nav-link px-2 link-body-emphasis">익명게시판 조회</a></li>
+					<li><a href="${pageContext.request.contextPath }/boardInsert"
+					    class="nav-link px-2 link-body-emphasis">익명게시판 등록</a></li>    
 				</ul>
 
 				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">

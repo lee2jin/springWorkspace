@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.yedam.java.rent.mapper.RentMapper">
+  	<select id="selectAllRentInfo" resultType="RentVO">
+  		SELECT  r.rent_no
+  				, r.book_no
+  				, r.rent_price
+  				, r.rent_date
+  				, r.rent_status
+  		FROM rent_tbl_06 as r
+  		INNER JOIN book_tbl_06 AS b	
+  		ON r.book_no = b.book_no
+  		ORDER BY r.book_no
+  	</select>
+  </mapper>
